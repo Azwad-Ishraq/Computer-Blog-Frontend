@@ -1,0 +1,46 @@
+.blogs{
+    font-family: monospace;
+    display: grid;
+    width: 60%;
+    margin: 0 auto;
+    grid-template-columns: repeat(1,1fr);
+    grid-row-gap: 50px;
+    margin-bottom: 50px;
+    
+}
+.blogs-heading{
+    
+    font-weight: 400;
+    font-size: 45px;
+}
+.blogs-heading span{
+    color: orange;
+}
+.pagination-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pagination-btns{
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.pag-btn{
+    border: 1px solid lightgray;
+    background-color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.pag-btn:hover{
+    background-color: rgba(211, 211, 211, 0.404);
+}
+.pag-btn-selected{
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: orange;
+    color: white;
+    border: 1px solid orange;
+}

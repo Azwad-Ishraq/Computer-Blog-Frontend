@@ -1,0 +1,88 @@
+.blog-item img{
+   
+    width: 70%;
+    height: 500px;
+    border-radius: 30px;
+
+}
+.blog-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-height: 1000px;
+}
+.blog-text{
+    width: 50%;
+    text-align: left;
+    font-weight: lighter;
+    height: 30%;
+    overflow-y: scroll;
+    margin-top: 50px;
+
+}
+.blog-text h1{
+    font-weight: 400;
+}
+.blog-text h3{
+    font-weight: 300;
+}
+.blog-btns{
+    margin-top: 50px;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 30px;
+
+
+}
+.readMore-btn{
+    border: 1px solid orange;
+    padding: 10px 20px;
+    background-color: white;
+    transition: .2s;
+    cursor: pointer;
+    text-decoration: none!important;
+    color: black!important;
+
+}
+.readMore-btn:hover{
+    background-color: orange;
+    color: white!important;
+}
+.share-img{
+    height: 30px!important;
+    width: 30px!important;
+    margin-left: 30px;
+    border-radius: 0px!important;
+    cursor: pointer;
+    
+    
+}
+.readmore-share {
+    display: flex;
+    align-items: center;
+}
+.delete-span i{
+    font-size: 30px;
+    cursor: pointer;
+    transition: .2s;
+    
+}
+.delete-span i:hover{
+    color: orange;
+}
+.edit-link{
+    color: black;
+}
+.fa-edit{
+    font-size: 30px;
+    margin-left: 30px;
+    transition: .3s;
+    cursor: pointer;
+}
+.fa-edit:hover{
+    color: orange;
+}

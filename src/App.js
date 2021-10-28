@@ -1,23 +1,41 @@
-import logo from './logo.svg';
+
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.css';
+import AddBlog from './components/AddBlog/AddBlog';
+import Navbar from './components/Navbar/Navbar';
+// import Header from './components/Header/Header'
+import Posts from './components/Blogs/Blogs';
+import Login from './components/Login/Login';
+import BlogDetails from './components/BlogDetails/BlogDetails';
+import EditBlog from './components/EditBlog/EditBlog';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <BrowserRouter>
+     <Navbar></Navbar>
+    
+     <Switch>
+       <Route exact path='/'>
+        <Posts></Posts>
+       </Route>
+       <Route path='/blogs'>
+        <Posts></Posts>
+       </Route>
+       <Route path='/login'>
+        <Login></Login>
+       </Route>
+       <Route path='/addBlog'>
+         <AddBlog></AddBlog>
+       </Route>
+       <Route path='/blog/:blogId'>
+         <BlogDetails></BlogDetails>
+       </Route>
+       <Route path='/blogEdit/:blogId'>
+        <EditBlog></EditBlog>
+       </Route>
+     </Switch>
+     </BrowserRouter>
     </div>
   );
 }
